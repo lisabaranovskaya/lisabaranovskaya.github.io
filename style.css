@@ -1,0 +1,353 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background: linear-gradient(to right, rgba(240, 53, 53, 0.664), rgba(238, 26, 11, 0.733));
+    font-family: "Space Grotesk";
+    
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    margin-right: 2rem;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: flex-end;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#info {
+    align-self: flex-start;
+    font-size: 5rem;
+    /* font-family: "Staatliches"; */
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.name {
+    background-color: white;
+    width: 60%;
+    font-size: 3rem;
+}
+
+.place {
+    font-size: 1.8rem;
+}
+
+.pr-info, .tribute-page, .skills, .c-info {
+    margin-left: 5rem;
+}
+
+#projects {
+    margin-top: 10rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0;
+}
+
+img {
+    width: 15rem;
+    height: 10rem;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    border-radius: 2%;
+}
+
+.pr-info {
+    margin-bottom: 2rem;
+}
+
+.skills {
+    margin-top: 4rem;
+}
+
+#contact {
+    margin-top: 10rem;
+}
+
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("static/fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("static/fonts/SpaceGrotesk-Medium.woff") format("woff");
+}
+
+ul.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 2rem 0 4rem 4rem;
+}
+
+.name {
+    margin: 0 0 0.5rem 1rem;
+    padding: 0.5rem;
+}
+
+.hello {
+    background-color: rgb(255, 229, 189);
+    width: 35%;
+    margin: 0 0 0.5rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.job {
+    background-color: rgb(255, 233, 243);
+    margin: 0 0 0.5rem 1.5rem;
+    padding: 0.5rem;
+}
+
+.place {
+    background-color: antiquewhite;
+    width: 30%;
+    margin: 0 0 0.5rem 2rem;
+    padding: 0.5rem;
+}
+
+.c-info {
+    margin-left: 5rem;
+}
+
+@media only screen and (width:320px){
+   .navbar, .pr-info, .c-info, .sk-info {
+       font-size: 15px;
+   }
+   #contact{
+       margin-top: 1rem;
+   }
+
+    #info{
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .hello{
+        font-size: 2rem;
+        width: 45%;
+    }
+
+    .name{
+        font-size: 1.5rem;
+        width: 65%;
+    }
+
+    .job, .place{
+        font-size: 1rem;
+    }
+
+    .job{
+        width: 40%;
+    }
+
+    .place{
+        width: 35%;
+    }
+
+    #projects{
+        margin-top: -6rem;
+    }
+
+    .pr-info, .tribute-page, .skills, .c-info, .survey-form, .dsgn-co {
+        margin-left: 1rem;
+    }
+    .grid-container{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 300px;
+        height: 400px;
+    }
+
+    img{
+        width: 10rem;
+        height: 7rem;
+    }
+
+    ul.links{
+        margin: 1rem 0 1rem 1rem;
+        font-size: 15px;
+    }
+
+   li.contacts{
+       display: block;
+   }
+}
+
+@media only screen and (width:375px){
+    #info{
+        margin-left: 1rem;
+    }
+
+    .hello{
+        font-size: 3rem;
+        width: 60%;
+    }
+
+    .name{
+        font-size: 1.8rem;
+        width: 70%;
+    }
+
+    .job{
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .place{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+    .pr-info, .tribute-page, .skills, .c-info, .survey-form, .dsgn-co {
+        margin-left: 2rem;
+    }
+
+    .grid-container{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 500px;
+        height: 600px;
+    }
+
+    ul.links{
+        margin: 1rem 0 1rem 1rem;
+    }
+
+   li.contacts{
+       display: block;
+   }
+}
+
+
+
+
+@media only screen and (width: 768px) {
+    .hello {
+        width: 50%;
+    }
+    .job {
+        width: 40%;
+        font-size: 2.5rem;
+    }
+    .welcome-section {
+        height: 100vh;
+    }
+    #info {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .navbar {
+        margin-top: 1rem;
+    }
+    .pr-info, .tribute-page, .skills, .c-info, .survey-form, .dsgn-co {
+        margin-left: 2rem;
+    }
+    ul.nav {
+        margin-right: 11rem;
+    }
+
+    #contact{
+        margin-top: 18rem;
+    }
+
+    ul.links{
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    body{
+        width: 768px;
+    }
+
+    .grid-container{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 500px;
+        height: 600px;
+    }
+}
+
+@media only screen and (width:1024px){
+    ul.nav{
+        margin-right: 2rem;
+    }
+
+    #info {
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .hello{
+        font-size: 4rem;
+        width: 30%;
+    }
+
+    .job{
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    .name{
+        width: 50%;
+    }
+
+    .pr-info, .tribute-page, .skills, .c-info, .survey-form, .dsgn-co {
+        margin-left: 2rem;
+    }
+
+    img{
+        width: 10rem;
+        height: 7rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+    }
+
+    #contact{
+        margin-top: -4rem;
+    }
+
+    #projects{
+        margin-top: 3rem;
+    }
+
+    ul.links{
+        margin-left: 1rem;
+    }
+}
+
